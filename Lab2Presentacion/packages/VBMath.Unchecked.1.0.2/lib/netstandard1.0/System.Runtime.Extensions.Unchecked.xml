@@ -1,0 +1,207 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+System.Runtime.Extensions.Unchecked
+</name>
+</assembly>
+<members>
+<member name="T:System.Numerics.UncheckedInteger">
+ <summary>
+ Provides utility methods for unchecked integer operations that do not throw <see cref="T:System.OverflowException"/>.
+ </summary>
+</member>
+<member name="M:System.Numerics.UncheckedInteger.Add(System.Byte,System.Byte)">
+ <summary>
+ Adds two integer values and returns the result without throwing an <see cref="T:System.OverflowException"/>.
+ </summary>
+ <param name="left">The first value to add.</param>
+ <param name="right">The second value to add.</param>
+ <returns>The unchecked sum of <paramref name="left"/> and <paramref name="right"/>.</returns>
+</member>
+<member name="M:System.Numerics.UncheckedInteger.Add(System.SByte,System.SByte)">
+ <summary>
+ Adds two integer values and returns the result without throwing an <see cref="T:System.OverflowException"/>.
+ </summary>
+ <param name="left">The first value to add.</param>
+ <param name="right">The second value to add.</param>
+ <returns>The unchecked sum of <paramref name="left"/> and <paramref name="right"/>.</returns>
+</member>
+<member name="M:System.Numerics.UncheckedInteger.Add(System.UInt16,System.UInt16)">
+ <summary>
+ Adds two integer values and returns the result without throwing an <see cref="T:System.OverflowException"/>.
+ </summary>
+ <param name="left">The first value to add.</param>
+ <param name="right">The second value to add.</param>
+ <returns>The unchecked sum of <paramref name="left"/> and <paramref name="right"/>.</returns>
+</member>
+<member name="M:System.Numerics.UncheckedInteger.Add(System.Int16,System.Int16)">
+ <summary>
+ Adds two integer values and returns the result without throwing an <see cref="T:System.OverflowException"/>.
+ </summary>
+ <param name="left">The first value to add.</param>
+ <param name="right">The second value to add.</param>
+ <returns>The unchecked sum of <paramref name="left"/> and <paramref name="right"/>.</returns>
+</member>
+<member name="M:System.Numerics.UncheckedInteger.Add(System.UInt32,System.UInt32)">
+ <summary>
+ Adds two integer values and returns the result without throwing an <see cref="T:System.OverflowException"/>.
+ </summary>
+ <param name="left">The first value to add.</param>
+ <param name="right">The second value to add.</param>
+ <returns>The unchecked sum of <paramref name="left"/> and <paramref name="right"/>.</returns>
+</member>
+<member name="M:System.Numerics.UncheckedInteger.Add(System.Int32,System.Int32)">
+ <summary>
+ Adds two integer values and returns the result without throwing an <see cref="T:System.OverflowException"/>.
+ </summary>
+ <param name="left">The first value to add.</param>
+ <param name="right">The second value to add.</param>
+ <returns>The unchecked sum of <paramref name="left"/> and <paramref name="right"/>.</returns>
+</member>
+<member name="M:System.Numerics.UncheckedInteger.Add(System.UInt64,System.UInt64)">
+ <summary>
+ Adds two integer values and returns the result without throwing an <see cref="T:System.OverflowException"/>.
+ </summary>
+ <param name="left">The first value to add.</param>
+ <param name="right">The second value to add.</param>
+ <returns>The unchecked sum of <paramref name="left"/> and <paramref name="right"/>.</returns>
+</member>
+<member name="M:System.Numerics.UncheckedInteger.Add(System.Int64,System.Int64)">
+ <summary>
+ Adds two integer values and returns the result without throwing an <see cref="T:System.OverflowException"/>.
+ </summary>
+ <param name="left">The first value to add.</param>
+ <param name="right">The second value to add.</param>
+ <returns>The unchecked sum of <paramref name="left"/> and <paramref name="right"/>.</returns>
+</member>
+<member name="M:System.Numerics.UncheckedInteger.Subtract(System.Byte,System.Byte)">
+ <summary>
+  Subtracts one integer value from another and returns the result without throwing an <see cref="T:System.OverflowException"/>.
+ </summary>
+ <param name="left">The value to subtract from (the minuend).</param>
+ <param name="right">The value to subtract (the subtrahend).</param>
+ <returns>The unchecked result of subtracting <paramref name="right"/> from <paramref name="left"/>.</returns>
+</member>
+<member name="M:System.Numerics.UncheckedInteger.Subtract(System.SByte,System.SByte)">
+ <summary>
+  Subtracts one integer value from another and returns the result without throwing an <see cref="T:System.OverflowException"/>.
+ </summary>
+ <param name="left">The value to subtract from (the minuend).</param>
+ <param name="right">The value to subtract (the subtrahend).</param>
+ <returns>The unchecked result of subtracting <paramref name="right"/> from <paramref name="left"/>.</returns>
+</member>
+<member name="M:System.Numerics.UncheckedInteger.Subtract(System.UInt16,System.UInt16)">
+ <summary>
+  Subtracts one integer value from another and returns the result without throwing an <see cref="T:System.OverflowException"/>.
+ </summary>
+ <param name="left">The value to subtract from (the minuend).</param>
+ <param name="right">The value to subtract (the subtrahend).</param>
+ <returns>The unchecked result of subtracting <paramref name="right"/> from <paramref name="left"/>.</returns>
+</member>
+<member name="M:System.Numerics.UncheckedInteger.Subtract(System.Int16,System.Int16)">
+ <summary>
+  Subtracts one integer value from another and returns the result without throwing an <see cref="T:System.OverflowException"/>.
+ </summary>
+ <param name="left">The value to subtract from (the minuend).</param>
+ <param name="right">The value to subtract (the subtrahend).</param>
+ <returns>The unchecked result of subtracting <paramref name="right"/> from <paramref name="left"/>.</returns>
+</member>
+<member name="M:System.Numerics.UncheckedInteger.Subtract(System.UInt32,System.UInt32)">
+ <summary>
+  Subtracts one integer value from another and returns the result without throwing an <see cref="T:System.OverflowException"/>.
+ </summary>
+ <param name="left">The value to subtract from (the minuend).</param>
+ <param name="right">The value to subtract (the subtrahend).</param>
+ <returns>The unchecked result of subtracting <paramref name="right"/> from <paramref name="left"/>.</returns>
+</member>
+<member name="M:System.Numerics.UncheckedInteger.Subtract(System.Int32,System.Int32)">
+ <summary>
+  Subtracts one integer value from another and returns the result without throwing an <see cref="T:System.OverflowException"/>.
+ </summary>
+ <param name="left">The value to subtract from (the minuend).</param>
+ <param name="right">The value to subtract (the subtrahend).</param>
+ <returns>The unchecked result of subtracting <paramref name="right"/> from <paramref name="left"/>.</returns>
+</member>
+<member name="M:System.Numerics.UncheckedInteger.Subtract(System.UInt64,System.UInt64)">
+ <summary>
+  Subtracts one integer value from another and returns the result without throwing an <see cref="T:System.OverflowException"/>.
+ </summary>
+ <param name="left">The value to subtract from (the minuend).</param>
+ <param name="right">The value to subtract (the subtrahend).</param>
+ <returns>The unchecked result of subtracting <paramref name="right"/> from <paramref name="left"/>.</returns>
+</member>
+<member name="M:System.Numerics.UncheckedInteger.Subtract(System.Int64,System.Int64)">
+ <summary>
+  Subtracts one integer value from another and returns the result without throwing an <see cref="T:System.OverflowException"/>.
+ </summary>
+ <param name="left">The value to subtract from (the minuend).</param>
+ <param name="right">The value to subtract (the subtrahend).</param>
+ <returns>The unchecked result of subtracting <paramref name="right"/> from <paramref name="left"/>.</returns>
+</member>
+<member name="M:System.Numerics.UncheckedInteger.Multiply(System.Byte,System.Byte)">
+ <summary>
+ Returns the product of two integer values without throwing an <see cref="T:System.OverflowException"/>.
+ </summary>
+ <param name="left">The first number to multiply.</param>
+ <param name="right">The second number to multiply.</param>
+ <returns>The unchecked product of <paramref name="left"/> and <paramref name="right"/>.</returns>
+</member>
+<member name="M:System.Numerics.UncheckedInteger.Multiply(System.SByte,System.SByte)">
+ <summary>
+ Returns the product of two integer values without throwing an <see cref="T:System.OverflowException"/>.
+ </summary>
+ <param name="left">The first number to multiply.</param>
+ <param name="right">The second number to multiply.</param>
+ <returns>The unchecked product of <paramref name="left"/> and <paramref name="right"/>.</returns>
+</member>
+<member name="M:System.Numerics.UncheckedInteger.Multiply(System.UInt16,System.UInt16)">
+ <summary>
+ Returns the product of two integer values without throwing an <see cref="T:System.OverflowException"/>.
+ </summary>
+ <param name="left">The first number to multiply.</param>
+ <param name="right">The second number to multiply.</param>
+ <returns>The unchecked product of <paramref name="left"/> and <paramref name="right"/>.</returns>
+</member>
+<member name="M:System.Numerics.UncheckedInteger.Multiply(System.Int16,System.Int16)">
+ <summary>
+ Returns the product of two integer values without throwing an <see cref="T:System.OverflowException"/>.
+ </summary>
+ <param name="left">The first number to multiply.</param>
+ <param name="right">The second number to multiply.</param>
+ <returns>The unchecked product of <paramref name="left"/> and <paramref name="right"/>.</returns>
+</member>
+<member name="M:System.Numerics.UncheckedInteger.Multiply(System.UInt32,System.UInt32)">
+ <summary>
+ Returns the product of two integer values without throwing an <see cref="T:System.OverflowException"/>.
+ </summary>
+ <param name="left">The first number to multiply.</param>
+ <param name="right">The second number to multiply.</param>
+ <returns>The unchecked product of <paramref name="left"/> and <paramref name="right"/>.</returns>
+</member>
+<member name="M:System.Numerics.UncheckedInteger.Multiply(System.Int32,System.Int32)">
+ <summary>
+ Returns the product of two integer values without throwing an <see cref="T:System.OverflowException"/>.
+ </summary>
+ <param name="left">The first number to multiply.</param>
+ <param name="right">The second number to multiply.</param>
+ <returns>The unchecked product of <paramref name="left"/> and <paramref name="right"/>.</returns>
+</member>
+<member name="M:System.Numerics.UncheckedInteger.Multiply(System.UInt64,System.UInt64)">
+ <summary>
+ Returns the product of two integer values without throwing an <see cref="T:System.OverflowException"/>.
+ </summary>
+ <param name="left">The first number to multiply.</param>
+ <param name="right">The second number to multiply.</param>
+ <returns>The unchecked product of <paramref name="left"/> and <paramref name="right"/>.</returns>
+</member>
+<member name="M:System.Numerics.UncheckedInteger.Multiply(System.Int64,System.Int64)">
+ <summary>
+ Returns the product of two integer values without throwing an <see cref="T:System.OverflowException"/>.
+ </summary>
+ <param name="left">The first number to multiply.</param>
+ <param name="right">The second number to multiply.</param>
+ <returns>The unchecked product of <paramref name="left"/> and <paramref name="right"/>.</returns>
+</member>
+</members>
+</doc>

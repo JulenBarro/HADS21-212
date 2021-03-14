@@ -1,0 +1,12 @@
+C:\Users\X555\source\repos\Lab2Presentacion\LogicaNegocio\bin\Release\netstandard2.0\LogicaNegocio.deps.json
+C:\Users\X555\source\repos\Lab2Presentacion\LogicaNegocio\bin\Release\netstandard2.0\LogicaNegocio.dll
+C:\Users\X555\source\repos\Lab2Presentacion\LogicaNegocio\bin\Release\netstandard2.0\LogicaNegocio.pdb
+C:\Users\X555\source\repos\Lab2Presentacion\LogicaNegocio\bin\Release\netstandard2.0\AccesoDatos.dll
+C:\Users\X555\source\repos\Lab2Presentacion\LogicaNegocio\bin\Release\netstandard2.0\AccesoDatos.pdb
+C:\Users\X555\source\repos\Lab2Presentacion\LogicaNegocio\obj\Release\netstandard2.0\LogicaNegocio.vbprojAssemblyReference.cache
+C:\Users\X555\source\repos\Lab2Presentacion\LogicaNegocio\obj\Release\netstandard2.0\LogicaNegocio.AssemblyInfoInputs.cache
+C:\Users\X555\source\repos\Lab2Presentacion\LogicaNegocio\obj\Release\netstandard2.0\LogicaNegocio.AssemblyInfo.vb
+C:\Users\X555\source\repos\Lab2Presentacion\LogicaNegocio\obj\Release\netstandard2.0\LogicaNegocio.vbproj.CoreCompileInputs.cache
+C:\Users\X555\source\repos\Lab2Presentacion\LogicaNegocio\obj\Release\netstandard2.0\LogicaNegocio.vbproj.CopyComplete
+C:\Users\X555\source\repos\Lab2Presentacion\LogicaNegocio\obj\Release\netstandard2.0\LogicaNegocio.dll
+C:\Users\X555\source\repos\Lab2Presentacion\LogicaNegocio\obj\Release\netstandard2.0\LogicaNegocio.pdb
