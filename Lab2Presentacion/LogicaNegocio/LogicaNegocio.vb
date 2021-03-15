@@ -25,7 +25,7 @@ Public Class LogicaNegocio
             smtp.Credentials = New System.Net.NetworkCredential(from_address.Address, from_pass)
             'Creamos el mensaje con los parametros de origen y destino
             Dim message As New MailMessage(from_address, to_address)
-            'Añadimos el asunto
+            'AÃ±adimos el asunto
             message.Subject = "subject"
             'Concatenamos el cuerpo del mensaje a la plantilla
             message.Body = "<html><head></head><body>" + "https://localhost:44346/Confirmar.aspx?mbr=" + emailto + "&numconf=" + codigo + "</body></html>"
@@ -39,7 +39,7 @@ Public Class LogicaNegocio
         Return True
     End Function
 
-    Public Function envioCodigoCambioContraseña(ByVal emailto As String, ByVal codigo As String) As Boolean
+    Public Function envioCodigoCambioContraseÃ±a(ByVal emailto As String, ByVal codigo As String) As Boolean
         Try
             'Direccion de origen
             Dim from_address As New MailAddress("PruebasEmail4321@gmail.com", "Email Pruebas")
@@ -61,10 +61,10 @@ Public Class LogicaNegocio
             smtp.Credentials = New System.Net.NetworkCredential(from_address.Address, from_pass)
             'Creamos el mensaje con los parametros de origen y destino
             Dim message As New MailMessage(from_address, to_address)
-            'Añadimos el asunto
+            'AÃ±adimos el asunto
             message.Subject = "subject"
             'Concatenamos el cuerpo del mensaje a la plantilla
-            message.Body = "<html><head></head><body>" + "El código para el cambio de contraseña es el siguiente: " + codigo + "</body></html>"
+            message.Body = "<html><head></head><body>" + "El cÃ³digo para el cambio de contraseÃ±a es el siguiente: " + codigo + "</body></html>"
             'Definimos el cuerpo como html para poder escojer mejor como lo mandamos
             message.IsBodyHtml = True
             'Se envia el correo
@@ -113,23 +113,23 @@ Public Class LogicaNegocio
         Return aux
     End Function
 
-    Public Function codigoContraseña(ByVal email As String, ByVal codigo As Integer) As Boolean
+    Public Function codigoContraseÃ±a(ByVal email As String, ByVal codigo As Integer) As Boolean
         AccesoDatos.accesodatosSQL.conectar()
-        Dim aux = AccesoDatos.accesodatosSQL.codigoContraseña(email, codigo)
+        Dim aux = AccesoDatos.accesodatosSQL.codigoContraseÃ±a(email, codigo)
         AccesoDatos.accesodatosSQL.cerrarconexion()
         Return aux
     End Function
 
-    Public Function codigoContraseñaGet(ByVal emailto As String) As (numero As Integer, confir As Boolean)
+    Public Function codigoContraseÃ±aGet(ByVal emailto As String) As (numero As Integer, confir As Boolean)
         AccesoDatos.accesodatosSQL.conectar()
-        Dim aux = AccesoDatos.accesodatosSQL.codigoContraseñaGet(emailto)
+        Dim aux = AccesoDatos.accesodatosSQL.codigoContraseÃ±aGet(emailto)
         AccesoDatos.accesodatosSQL.cerrarconexion()
         Return aux
     End Function
 
-    Public Function cambiarContraseña(ByVal email As String, ByVal pass As String) As Boolean
+    Public Function cambiarContraseÃ±a(ByVal email As String, ByVal pass As String) As Boolean
         AccesoDatos.accesodatosSQL.conectar()
-        Dim aux = AccesoDatos.accesodatosSQL.cambiarContraseña(email, pass)
+        Dim aux = AccesoDatos.accesodatosSQL.cambiarContraseÃ±a(email, pass)
         AccesoDatos.accesodatosSQL.cerrarconexion()
         Return aux
     End Function
@@ -141,9 +141,9 @@ Public Class LogicaNegocio
         Return aux
     End Function
 
-    Public Function emailContraseña(ByVal emailto As String, ByVal pass As String) As Boolean
+    Public Function emailContraseÃ±a(ByVal emailto As String, ByVal pass As String) As Boolean
         AccesoDatos.accesodatosSQL.conectar()
-        Dim aux = AccesoDatos.accesodatosSQL.emailContraseña(emailto, pass)
+        Dim aux = AccesoDatos.accesodatosSQL.emailContraseÃ±a(emailto, pass)
         AccesoDatos.accesodatosSQL.cerrarconexion()
         Return aux
     End Function
@@ -153,10 +153,6 @@ Public Class LogicaNegocio
         Dim aux = AccesoDatos.accesodatosSQL.asignaturasAlumno(email)
         AccesoDatos.accesodatosSQL.cerrarconexion()
         Return aux
-    End Function
-
-    Public Function actualizarDsDa(ByVal dset As DataSet, ByVal da As SqlDataAdapter) As Boolean
-        Return AccesoDatos.accesodatosSQL.actualizarDsDa(dset, da)
     End Function
 
     'Devuelve true si es alumno y false si es profesor
