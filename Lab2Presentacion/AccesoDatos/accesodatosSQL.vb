@@ -13,7 +13,7 @@ Public Class accesodatosSQL
             conexion.ConnectionString =
             conexion.Open()
         Catch ex As Exception
-            Return "ERROR DE CONEXIÓN: " + ex.Message
+            Return "ERROR DE CONEXIÃ“N: " + ex.Message
         End Try
         Return "CONEXION OK"
     End Function
@@ -71,7 +71,7 @@ Public Class accesodatosSQL
         End Try
     End Function
 
-    Public Shared Function codigoContraseña(ByVal email As String, ByVal codigo As Integer) As Boolean
+    Public Shared Function codigoContraseÃ±a(ByVal email As String, ByVal codigo As Integer) As Boolean
         Try
             Dim st2 = "update Usuarios set codpass = '" & codigo & " ' where email = '" & email & " '"
             comando = New SqlCommand(st2, conexion)
@@ -123,7 +123,7 @@ Public Class accesodatosSQL
         End Try
     End Function
 
-    Public Shared Function codigoContraseñaGet(ByVal emailto As String) As (numero As Integer, confir As Boolean)
+    Public Shared Function codigoContraseÃ±aGet(ByVal emailto As String) As (numero As Integer, confir As Boolean)
         Try
             Dim emailespacio As String = emailto + " "
             Dim st = "select * from Usuarios where email = '" & emailto & "'"
@@ -141,7 +141,7 @@ Public Class accesodatosSQL
         End Try
     End Function
 
-    Public Shared Function cambiarContraseña(ByVal email As String, ByVal pass As String) As Boolean
+    Public Shared Function cambiarContraseÃ±a(ByVal email As String, ByVal pass As String) As Boolean
         Try
             Dim st2 = "update Usuarios set pass = '" & pass & " ' where email = '" & email & " '"
             comando = New SqlCommand(st2, conexion)
@@ -152,7 +152,7 @@ Public Class accesodatosSQL
         End Try
     End Function
 
-    Public Shared Function emailContraseña(ByVal emailto As String, ByVal pass As String) As Boolean
+    Public Shared Function emailContraseÃ±a(ByVal emailto As String, ByVal pass As String) As Boolean
         Try
             Dim st = "select * from Usuarios where email = '" & emailto & "'"
             comando = New SqlCommand(st, conexion)
@@ -197,15 +197,15 @@ Public Class accesodatosSQL
         dataAdapter.SelectCommand.Parameters.AddWithValue("@email", email)
         dataAdapter.Fill(dataSet, "Asignaturas")
 
-        dataAdapter = New SqlDataAdapter("select * from EstudiantesTareas where EstudiantesTareas.Email = @email", conexion)
-        dataAdapter.SelectCommand.Parameters.AddWithValue("@email", email)
-        dataAdapter.Fill(dataSet, "EstudiantesTareas")
-
         dataAdapter = New SqlDataAdapter("select * from TareasGenericas where TareasGenericas.Codigo NOT IN (select EstudiantesTareas.CodTarea 
         from EstudiantesTareas) and TareasGenericas.Explotacion = @true", conexion)
         dataAdapter.SelectCommand.Parameters.AddWithValue("@true", True)
-        Dim bldMbrs As New SqlCommandBuilder(dataAdapter)
         dataAdapter.Fill(dataSet, "TareasGenericas")
+
+        dataAdapter = New SqlDataAdapter("select * from EstudiantesTareas where EstudiantesTareas.Email = @email", conexion)
+        dataAdapter.SelectCommand.Parameters.AddWithValue("@email", email)
+        Dim bldMbrs As New SqlCommandBuilder(dataAdapter)
+        dataAdapter.Fill(dataSet, "EstudiantesTareas")
 
         Return (dataSet, dataAdapter)
     End Function
