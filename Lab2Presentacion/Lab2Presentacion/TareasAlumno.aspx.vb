@@ -35,7 +35,6 @@ Public Class TareasAlumno
             Next
             GridView1.DataSource = dt
             GridView1.DataBind()
-            ln.actualizarDsDa(dataSet, dataAdapter)
             Session("dataSet") = dataSet
             Session("dataAdapter") = dataAdapter
         End If
