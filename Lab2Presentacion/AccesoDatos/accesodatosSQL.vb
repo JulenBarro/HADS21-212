@@ -4,9 +4,6 @@ Imports Microsoft.VisualBasic.Strings
 Public Class accesodatosSQL
     Private Shared conexion As New SqlConnection
     Private Shared comando As New SqlCommand
-    Private Shared dataAdapter As New SqlDataAdapter()
-    Private Shared dataSet As New DataSet
-    Private Shared dataTable As New DataTable
 
     Public Shared Function conectar() As String
         Try
@@ -192,6 +189,10 @@ Public Class accesodatosSQL
     End Function
 
     Public Shared Function asignaturasAlumno(ByVal email As String) As (ds As DataSet, da As SqlDataAdapter)
+        Dim dataAdapter As New SqlDataAdapter()
+        Dim dataSet As New DataSet
+        Dim dataTable As New DataTable
+        
         dataAdapter = New SqlDataAdapter("select distinct GruposClase.codigoasig from EstudiantesGrupo inner join GruposClase on EstudiantesGrupo.Grupo = 
         GruposClase.codigo where EstudiantesGrupo.Email = @email", conexion)
         dataAdapter.SelectCommand.Parameters.AddWithValue("@email", email)
@@ -208,12 +209,6 @@ Public Class accesodatosSQL
         dataAdapter.Fill(dataSet, "EstudiantesTareas")
 
         Return (dataSet, dataAdapter)
-    End Function
-
-    Public Shared Function actualizarDsDa(ByVal dset As DataSet, ByVal da As SqlDataAdapter) As Boolean
-        dataSet = dset
-        dataAdapter = da
-        Return True
     End Function
 
 End Class
