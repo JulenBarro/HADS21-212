@@ -80,7 +80,6 @@ Public Class InstanciarTarea
             DataSet.AcceptChanges()
             Session("dataSet") = DataSet
             Session("dataAdapter") = dataAdapter
-            ln.actualizarDsDa(DataSet, dataAdapter)
             Button1.Enabled = False
             Label1.Text = "Se ha actualizado la BD correctamente."
             Label1.Visible = True
