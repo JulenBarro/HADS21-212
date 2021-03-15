@@ -83,8 +83,10 @@ Public Class InstanciarTarea
             ln.actualizarDsDa(DataSet, dataAdapter)
             Button1.Enabled = False
             Label1.Text = "Se ha actualizado la BD correctamente."
+            Label1.Visible = True
         Catch ex As Exception
             Label1.Text = "Error! No se ha actualizado la BD."
+            Label1.Visible = True
         End Try
 
     End Sub
